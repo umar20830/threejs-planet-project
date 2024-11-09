@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full h-screen overflow-hidden text-white">
+      <div class="w-full h-screen absolute top-0 left-0 z-[2]">
+        <nav class="flex justify-between items-center px-10 py-8 font-[Arial]">
+          <h1 class="text-2xl font-bold">Planets</h1>
+          <div class="menusContainer flex gap-8">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </nav>
+        <div
+          class="planets absolute top-[25%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
+        >
+          <div class="w-full h-[8.5em] overflow-hidden">
+            <h1
+              class="heading text-9xl font-['Bellina'] font-bold tracking-tight"
+            >
+              Earth
+            </h1>
+            <h1
+              class="heading text-9xl font-['Bellina'] font-bold tracking-tight"
+            >
+              Csilla
+            </h1>
+            <h1
+              class="heading text-9xl font-['Bellina'] font-bold tracking-tight"
+            >
+              Volcanic
+            </h1>
+            <h1
+              class="heading text-9xl font-['Bellina'] font-bold tracking-tight"
+            >
+              Venus
+            </h1>
+          </div>
+          <p class="text-xl tracking-tighter">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <div
+            class="w-95 h-px bg-gradient-to-r from-transparent via-white to-transparent mt-4"
+          ></div>
+        </div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
